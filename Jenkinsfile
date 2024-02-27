@@ -1,7 +1,9 @@
 pipeline {
   agent {
-  node 'workstation'
-
+  node {
+  label 'workstation'
+}
+}
   stages {
 
     stage('Build Docker Image') {
